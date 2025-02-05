@@ -1,0 +1,111 @@
+/* src/components/Header.css */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    z-index: 100;
+    color: #fff;
+  }
+  
+  .header-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #d4af37;
+    text-decoration: none;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .nav-item:hover,
+  .nav-item.active {
+    color: #d4af37;
+  }
+  
+  /* Auth and Account Menu */
+  .auth-menu, .account-menu {
+    position: relative;
+  }
+  
+  .btn-auth {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .account-icon {
+    font-size: 1.5rem; /* Ukuran ikon */
+    cursor: pointer;
+  }
+  
+  .auth-dropdown, .account-dropdown {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: #fff;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 150px;
+  }
+  
+  .auth-dropdown a,
+  .account-dropdown .dropdown-btn {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    transition: background 0.3s;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .auth-dropdown a:hover,
+  .account-dropdown .dropdown-btn:hover {
+    background: #f0f0f0;
+  }
+  
+  .account-info {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    word-break: break-all; /* Agar email panjang bisa dibungkus */
+  }
+  
+  .dropdown-close {
+    background: #ddd;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+  

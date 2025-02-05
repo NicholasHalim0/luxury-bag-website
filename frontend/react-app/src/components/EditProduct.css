@@ -1,0 +1,53 @@
+/* src/components/EditProduct.css */
+.edit-product {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  .edit-product h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .edit-product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .edit-product-form label {
+    font-weight: bold;
+  }
+  
+  .edit-product-form input,
+  .edit-product-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .btn-submit {
+    padding: 12px;
+    background-color: #d4af37;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #b4882c;
+  }
+  
+  .message {
+    text-align: center;
+    color: green;
+  }
+  
